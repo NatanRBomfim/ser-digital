@@ -19,15 +19,15 @@ The project simulates a website where users can see the company's partner brands
 
 ### 🖥️ Desktop
 
-![Preview do projeto](./assets/imagens/screenshot/dsk-brands.png)
+![Preview do projeto](./assets/images/screenshot/dsk-brands.png)
 
-![Preview do projeto](./assets/imagens/screenshot/dsk-home.png)
+![Preview do projeto](./assets/images/screenshot/dsk-home.png)
 
-![Preview do projeto](./assets/imagens/screenshot/dsk-testimonials.png)
+![Preview do projeto](./assets/images/screenshot/dsk-testimonials.png)
 
 ### 📱 Mobile
 
-![Preview do projeto](./assets/imagens/screenshot/mb-home.png)
+![Preview do projeto](./assets/images/screenshot/mb-home.png)
 
 
 > Modern interface, responsive layout, and a strong focus on usability.
@@ -135,15 +135,15 @@ O projeto simula um site onde os usuários podem ver as marcas parceiras da empr
 
 ### 🖥️ Desktop
 
-![Preview do projeto](./assets/imagens/screenshot/dsk-brands.png)
+![Preview do projeto](./assets/images/screenshot/dsk-brands.png)
 
-![Preview do projeto](./assets/imagens/screenshot/dsk-home.png)
+![Preview do projeto](./assets/images/screenshot/dsk-home.png)
 
-![Preview do projeto](./assets/imagens/screenshot/dsk-testimonials.png)
+![Preview do projeto](./assets/images/screenshot/dsk-testimonials.png)
 
 ### 📱 Mobile
 
-![Preview do projeto](./assets/imagens/screenshot/mb-home.png)
+![Preview do projeto](./assets/images/screenshot/mb-home.png)
 
 > Interface moderna, layout responsivo e foco em usabilidade.
 
