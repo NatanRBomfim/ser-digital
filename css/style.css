@@ -1,0 +1,417 @@
+:root {
+    --dark: #272D38;
+    --light: #FFF;
+    --primary-color: #8EADD5;
+    --primary-color-dark: #3f3f3f;
+    --gray: #F6F6F6;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--dark);
+    text-align: center;
+    margin: 0;
+    background-image: radial-gradient(circle at left top, rgb(142 173 213 / .3), transparent 10%),
+        radial-gradient(circle at right center, rgb(142 173 213 / .3), transparent 50%);
+}
+
+.content-wrapper-center {
+    padding: 1.5rem 1rem 2rem;
+    max-width: 67.25rem;
+    margin: auto;
+}
+
+.hero_title {
+    margin-top: 0;
+}
+
+.header-menu {
+    list-style-type: none;
+    padding: 0;
+    text-align: right;
+}
+
+.header-menu a {
+    display: block;
+    color: var(--dark);
+    padding: 1em 0;
+}
+
+.header-menu li {
+    padding: .5em 0;
+}
+
+.header-menu a:hover {
+    background-color: color-mix(in srgb, var(--dark) 5%, transparent);
+}
+
+a {
+    color: inherit;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.header {
+    text-align: left;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 1em;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    color: var(--light);
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: var(--primary-color-dark);
+}
+
+img {
+    max-width: 100%;
+}
+
+.brands {
+    text-align: center;
+}
+
+.brands h2 {
+    font-size: 1rem;
+    font-weight: lighter;
+    color: #667085;
+}
+
+.brands ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: var(--gray);
+    border-radius: 5px;
+    padding: 1em;
+    display: flex;
+    justify-content: space-around;
+    gap: 1em;
+}
+
+.hide {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+.testemunho {
+    background-color: var(--gray);
+    border-radius: 5px;
+    padding: 1rem;
+
+    container: testemunhoCard / inline-size;
+}
+
+.testemunho_thumb {
+    width: 8.125rem;
+    height: 8.125rem;
+}
+
+.contato {
+    background-color: var(--gray);
+    border-radius: 5px;
+    padding: 2rem;
+}
+
+.icons li {
+    display: inline-block;
+    font-size: 2rem;
+    transition: color .2s ease-in-out;
+}
+
+.icons li:hover {
+    color: var(--primary-color);
+}
+
+.contato_image {
+    display: none;
+}
+
+.footer {
+    background-color: var(--gray);
+}
+
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.logo {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.copyright {
+    white-space: nowrap;
+}
+
+.hero,
+.brands,
+.branding,
+.testemunhos,
+.contato {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: .5rem;
+    grid-auto-flow: dense;
+
+}
+
+.row.testemunhos_wrapper {
+    row-gap: 3rem;
+}
+
+.row.contato {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+.contato_title {
+    margin-top: 0;
+}
+
+.row>.sm-12 {
+    grid-column: 1 / -1;
+}
+
+.testemunho_card {
+    display: flex;
+    gap: .5rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+@container testemunhoCard (width > 42.187rem) {
+    .testemunho_card {
+        flex-direction: row;
+        text-align: left;
+    }
+}
+
+@media (width > 46.25em) {
+    body {
+        text-align: left;
+    }
+
+    h1 {
+        font-size: 3.625rem;
+    }
+
+    h2 {
+        font-size: 2.875rem;
+    }
+
+    .imagens {
+        text-align: center;
+    }
+
+    .contato_image {
+        display: block;
+        text-align: center;
+    }
+
+    .header {
+        align-items: center;
+    }
+
+    .header-menu a {
+        padding: 1rem;
+    }
+
+    .header-menu li {
+        display: inline-block;
+    }
+
+    .menu-btn,
+    .menu-icon {
+        display: none;
+    }
+
+    .row {
+        gap: 1.5rem;
+    }
+
+    .row>.md-9 {
+        grid-column: span 9;
+    }
+
+    .row>.md-3 {
+        grid-column: span 3;
+    }
+
+    .row>.md-6 {
+        grid-column: span 6;
+    }
+
+    .row>.md-7-12 {
+        grid-column: 7 / 13;
+    }
+
+    .row>.md-1-6 {
+        grid-column: 1 / 7;
+    }
+}
+
+@media (width > 90em) {
+    .hero_title {
+        margin-bottom: 6.25rem;
+    }
+
+    .row>.lg-4 {
+        grid-column: span 4;
+    }
+
+    .row>.lg-5 {
+        grid-column: span 5;
+    }
+
+    .row>.lg-6 {
+        grid-column: span 6;
+    }
+
+    .row>.lg-7 {
+        grid-column: span 7;
+    }
+
+    .row>.lg-3 {
+        grid-column: span 3;
+    }
+
+    .row>.lg-1-5 {
+        grid-column: 1 / 6;
+    }
+
+    .row>.lg-8-12 {
+        grid-column: 8 / 13;
+    }
+
+    .row>.lg-1-7 {
+        grid-column: 1 /8;
+    }
+
+}
+
+/* Hamburguer menu */
+
+.menu-icon {
+    cursor: pointer;
+    position: relative;
+    height: 24px;
+}
+
+.menu-btn:checked~.header-menu {
+    max-height: 100vh;
+}
+
+.header-menu:focus-within {
+    max-height: 100vh;
+}
+
+.nav-icon {
+    background-color: var(--dark);
+    display: inline-block;
+    position: relative;
+    height: 2px;
+    width: 24px;
+}
+
+.nav-icon::after,
+.nav-icon::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    height: 2px;
+    width: 24px;
+    transition: transform .3s;
+}
+
+.nav-icon::after {
+    background-color: var(--dark);
+    transform: translateY(8px);
+}
+
+.nav-icon::before {
+    background-color: var(--dark);
+    transform: translateY(-8px);
+}
+
+.menu-btn:checked +.menu-icon .nav-icon{
+    background-color: transparent;
+}
+
+.menu-btn:checked +.menu-icon .nav-icon::after{
+    transform: rotate(-45deg);
+}
+
+.menu-btn:checked +.menu-icon .nav-icon::before{
+    transform: rotate(45deg);
+}
+
+.menu-btn:focus-visible + .menu-icon{
+    outline: 2px solid black;
+    outline-offset: 2px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-menu {
+    background-color: white;
+    max-height: 0px;
+    right: 0;
+    left: 0;
+    top: 50px;
+    overflow: hidden;
+    position: absolute;
+    transition: all .2s ease-in-out;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+@media (width > 46.25em) {
+    .header-menu {
+        position: static;
+        max-height: initial;
+        background-color: initial;
+    }
+}
